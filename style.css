@@ -28,14 +28,7 @@ nav ul li a {
     font-weight: bold;
 }
 
-#home {
-    text-align: center;
-    background-color: #282c34;
-    color: white;
-    padding: 60px 20px;
-}
-
-#about, #skills, #contact {
+section {
     margin: 20px auto;
     padding: 20px;
     max-width: 800px;
