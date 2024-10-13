@@ -1,7 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diego Bayancela - Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Welcome to Diego Bayancela's Website</h1>
+        <p>Full-stack developer | C# | JavaScript | .NET | React | 3D Creation</p>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Diego, a full-stack developer with expertise in web and software application development using .NET, Java, JavaScript, and C#. I enjoy solving complex problems and building scalable solutions. I also have experience in 3D creation and graphic design.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>C#, JavaScript, Java, TypeScript</li>
+            <li>.NET, React, Node.js, Spring Boot</li>
+            <li>Docker, MS SQL, MongoDB, Oracle</li>
+            <li>Agile methodologies, Unit testing, SonarQube</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <p id="formStatus"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Diego Bayancela</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
