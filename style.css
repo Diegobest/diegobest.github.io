@@ -71,3 +71,48 @@ footer {
 .social-icons a:hover .icon {
     transform: scale(1.2);
 }
+
+#projects {
+    padding: 20px;
+}
+
+#projects h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.project {
+    display: flex;
+    margin-bottom: 30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.project img {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.project-details {
+    flex-grow: 1;
+}
+
+.project h2 {
+    margin-top: 0;
+}
+
+.project-links a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-links a:hover {
+    text-decoration: underline;
+}
