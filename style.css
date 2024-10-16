@@ -9,7 +9,7 @@
 }
 
 body {
-  height: 100vh;
+  height: auto; /* Change to auto to prevent fixed height issues */
   width: 100%;
   background: linear-gradient(to bottom, #175d69 23%, #330c43 95%);
 }
@@ -19,6 +19,8 @@ body {
   top: 0;
   left: 0;
   width: 100%;
+  height: 100px; /* Set fixed height for header */
+  z-index: 1000; /* Ensure it sits above content */
 }
 
 .navbar {
@@ -59,7 +61,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 95vh;
+  height: 95vh; /* Consider keeping this as is or adjust */
   padding: 0 15px;
   max-width: 1200px;
   margin: 0 auto;
@@ -134,26 +136,25 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 95vh;
+  min-height: calc(100vh - 100px); /* Adjust according to header height */
   padding: 0 15px;
   max-width: 1200px;
-  margin-top: 100px; /* Ajuster cette valeur si nécessaire */
-  min-height: calc(100vh - 100px); /* Subtract header height */
+  margin-top: 100px; /* Adjust this value as necessary */
 }
 
 .about-section .about {
-  max-width: 600px; /* Ajustez selon vos besoins */
-  color: #fff; /* Couleur du texte */
+  max-width: 600px; /* Adjust based on your needs */
+  color: #fff; /* Text color */
 }
 
 .about-section h2 {
-  font-size: 2rem; /* Taille du titre */
-  margin-bottom: 20px; /* Espacement sous le titre */
+  font-size: 2rem; /* Title size */
+  margin-bottom: 20px; /* Spacing below the title */
 }
 
 .about-section p {
-  font-size: 1.2rem; /* Taille du texte */
-  color: #c9c7c7; /* Couleur du texte */
+  font-size: 1.2rem; /* Text size */
+  color: #c9c7c7; /* Text color */
 }
 
 /* Media Queries */
@@ -192,6 +193,6 @@ body {
   }
 
   .about-section {
-    margin-top: 70px; /* Ajustez cette valeur si nécessaire */
+    margin-top: 70px; /* Adjust this value as necessary */
   }
 }
