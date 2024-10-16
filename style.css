@@ -61,7 +61,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 95vh; /* Consider keeping this as is or adjust */
+  height: 100vh; /* Consider keeping this as is or adjust */
   padding: 0 15px;
   max-width: 1200px;
   margin: 0 auto;
