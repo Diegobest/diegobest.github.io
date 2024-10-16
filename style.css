@@ -195,4 +195,20 @@ body {
   .about-section {
     margin-top: 70px; /* Adjust this value as necessary */
   }
+
+  /* About Section Styles */
+.projects-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: calc(100vh - 100px); /* Adjust according to header height */
+    padding: 0 15px;
+    max-width: 1200px;
+    margin-top: 100px; /* Adjust this value as necessary */
+  }
+
+  .projects-section .projects-content {
+    max-width: 600px; /* Adjust based on your needs */
+    color: #fff; /* Text color */
+  }
 }
