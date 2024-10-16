@@ -1,38 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - Diego Bayancela</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="projects.html">Projects</a></li>
-
-            </ul>
-        </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Diego Bayancela</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <h2 class="logo"><a href="index.html">Diego Bayancela</a></h2>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" id="hamburger-btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24"
+            viewBox="0 0 24 24"
+            width="24"
+          >
+            <path
+              d="M3 12h18M3 6h18M3 18h18"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+        </label>
+        <ul class="links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <section id="about">
+    <section class="about-section">
+      <div class="about-content">
         <h2>About Me</h2>
-        <p>Hello! I'm Diego, a full-stack developer with expertise in web and software application development using .NET, Java, JavaScript, and C#. I enjoy solving complex problems and building scalable solutions. I also have experience in 3D creation and graphic design.</p>
-        
-        <h2>Skills</h2>
-        <ul>
-            <li>C#, JavaScript, Java, TypeScript</li>
-            <li>.NET, React, Node.js, Spring Boot</li>
-            <li>Docker, MS SQL, MongoDB, Oracle</li>
-            <li>Agile methodologies, Unit testing, SonarQube</li>
-        </ul>
+        <p>
+          I'm Diego Bayancela, a full-stack developer with expertise in
+          technologies like C#, JavaScript, .NET, React, and 3D creation. With
+          a background in design and development, I bring creativity and
+          technical skills together to deliver user-centric software solutions.
+        </p>
+        <p>
+          I have worked on diverse projects, from web applications to 3D
+          animations, and I’m passionate about continuous learning and solving
+          complex problems. Fluent in English, French, and Spanish, I thrive in
+          multicultural and collaborative environments.
+        </p>
+      </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Diego Bayancela</p>
+      <p>&copy; 2024 Diego Bayancela</p>
     </footer>
-</body>
+  </body>
 </html>

@@ -1,55 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projects - Diego Bayancela</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="projects.html">Projects</a></li>
-            </ul>
-        </nav>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <h2 class="logo"><a href="index.html">Diego Bayancela</a></h2>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" id="hamburger-btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24"
+            viewBox="0 0 24 24"
+            width="24"
+          >
+            <path
+              d="M3 12h18M3 6h18M3 18h18"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+        </label>
+        <ul class="links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <section id="projects">
+    <section class="projects-section">
+      <div class="projects-content">
         <h2>Projects</h2>
-              <!-- Project 1 -->
-              <div class="project Nomie">
-                <img src="path-to-your-image/project1.png" alt="Project 1 Image">
-                <div class="project-details">
-                    <h2>Project 1 Nomie webapp</h2>
-                    <p>This is a brief description of Project 1. Explain the purpose and features of your project.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/your-username/project1" target="_blank">GitHub Repository</a>
-                        <a href="https://your-documentation-link.com" target="_blank">Documentation</a>
-                    </div>
-                </div>
-            </div>
-    
-            <!-- Project 2 -->
-            <div class="project projectgo">
-                <img src="path-to-your-image/project2.png" alt="Project 2 Image">
-                <div class="project-details">
-                    <h2>Project 2 ProjectGO</h2>
-                    <p>This is a brief description of Project 2. Explain the purpose and features of your project.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/your-username/project2" target="_blank">GitHub Repository</a>
-                        <a href="https://your-documentation-link.com" target="_blank">Documentation</a>
-                    </div>
-                </div>
-            </div>
-    
-            <!-- Add more projects as needed -->
+
+        <div class="project-item">
+          <img src="project1.jpg" alt="Project 1" class="project-image" />
+          <div class="project-details">
+            <h3>Project 1: Web Application</h3>
+            <p>
+              A full-stack web application developed using .NET, React, and SQL
+              Server. It includes features for user authentication, dynamic data
+              rendering, and robust API integrations.
+            </p>
+            <a href="https://github.com/your-username/project1" target="_blank"
+              >GitHub Repository</a
+            >
+            <a href="documentation-link" target="_blank">Project Documentation</a>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <img src="project2.jpg" alt="Project 2" class="project-image" />
+          <div class="project-details">
+            <h3>Project 2: 3D Animation</h3>
+            <p>
+              A visually rich 3D animation project, created using advanced
+              rendering techniques in Blender and Unity. This project showcases
+              my skills in 3D modeling and animation.
+            </p>
+            <a href="https://github.com/your-username/project2" target="_blank"
+              >GitHub Repository</a
+            >
+            <a href="documentation-link" target="_blank">Project Documentation</a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Diego Bayancela</p>
+      <p>&copy; 2024 Diego Bayancela</p>
     </footer>
-</body>
+  </body>
 </html>
