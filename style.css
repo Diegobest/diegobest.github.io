@@ -118,6 +118,35 @@ body {
   background-color: #47b2e4;
 }
 
+/* Social icons next to the logo */
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .social-icons a {
+    text-decoration: none;
+  }
+  
+  .social-icons img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.2s ease;
+  }
+  
+  .social-icons img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Adjust the logo to align with the icons */
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  
 /* Hamburger menu styles */
 #menu-toggle {
   display: none;
