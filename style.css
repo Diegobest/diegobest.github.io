@@ -162,4 +162,15 @@ body {
   .hero-section img {
     display: none;
   }
+
+  .about-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 95vh;
+    padding: 0 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
 }
