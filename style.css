@@ -195,43 +195,4 @@ body {
   .about-section {
     margin-top: 70px; /* Adjust this value as necessary */
   }
-
-  * Projects Section Styles */
-.projects-section {
-  display: flex;
-  flex-direction: column; /* Stack items vertically */
-  align-items: center;
-  justify-content: center;
-  padding: 100px 15px; /* Add padding for top spacing */
-  background-color: rgba(255, 255, 255, 0.1); /* Light transparent background for contrast */
-  color: #fff; /* Default text color */
-  max-width: 1200px; /* Limit width for better readability */
-  margin: 0 auto; /* Center the section */
-}
-
-.projects-content {
-  text-align: center; /* Center-align text for a cleaner look */
-}
-
-.projects-content h2 {
-  font-size: 2.5rem; /* Size for the projects title */
-  margin-bottom: 40px; /* Space below the title */
-}
-
-.project-item {
-  display: flex; /* Use flexbox for horizontal alignment */
-  flex-direction: row; /* Align items horizontally */
-  background: rgba(255, 255, 255, 0.2); /* Light background for project items */
-  border-radius: 10px; /* Rounded corners for project items */
-  margin-bottom: 30px; /* Space between project items */
-  padding: 20px; /* Padding inside project items */
-  max-width: 800px; /* Limit width for project items */
-  width: 100%; /* Make it responsive */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Soft shadow effect */
-  transition: transform 0.3s ease; /* Smooth scaling on hover */
-}
-
-.project-item:hover {
-  transform: scale(1.02); /* Scale up on hover */
-}
 }
