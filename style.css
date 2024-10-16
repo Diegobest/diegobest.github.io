@@ -138,6 +138,7 @@ body {
   padding: 0 15px;
   max-width: 1200px;
   margin-top: 100px; /* Ajuster cette valeur si nécessaire */
+  min-height: calc(100vh - 100px); /* Subtract header height */
 }
 
 .about-section .about {
@@ -191,6 +192,6 @@ body {
   }
 
   .about-section {
-    margin-top: 90px; /* Ajustez cette valeur si nécessaire */
+    margin-top: 70px; /* Ajustez cette valeur si nécessaire */
   }
 }
