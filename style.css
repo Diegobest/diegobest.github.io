@@ -203,7 +203,6 @@ body {
     align-items: center;
     justify-content: center;
     padding: 100px 15px; /* Add padding for top spacing */
-    background: linear-gradient(to bottom, #175d69 23%, #330c43 95%); /* Same gradient as body */
     color: #fff; /* Default text color */
     max-width: 1200px; /* Limit width for better readability */
     margin: 0 auto; /* Center the section */
