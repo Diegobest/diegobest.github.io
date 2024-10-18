@@ -234,7 +234,7 @@ body {
 
 .project-details {
     flex: 1; /* Permite que el texto ocupe el espacio disponible */
-    margin-right: 20px; /* Espacio entre el texto y la imagen */
+    margin-right: 50px; /* Espacio entre el texto y la imagen */
 }
 
 .project-image {
@@ -247,8 +247,8 @@ body {
 .project-details a {
     display: block; /* Hace que los enlaces se muestren en bloques */
     margin-bottom: 10px; /* Espacio entre los enlaces */
-    color: #ffffff; /* Color de texto de los enlaces */
-    text-decoration: none; /* Sin subrayado */
+    color: #d2a316; /* Color de texto de los enlaces */
+    text-decoration: underline; /* Sin subrayado */
 }
 
 .project-details a:hover {
@@ -256,4 +256,3 @@ body {
 }
 
 
-}
