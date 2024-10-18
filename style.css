@@ -228,7 +228,7 @@ body {
   /*para los links en la pagina project*/
   a {
     color: #fff; /* Change the link color to white */
-    margin-right: 60px; /* Space between links */
+    margin-right: 100px; /* Space between links */
     text-decoration: none;
     font-weight: 500; /* Optional: Make the text a bit bolder */
     transition: 0.3s ease; /* Optional: Smooth hover transition */
@@ -238,11 +238,11 @@ body {
     color: #47b2e4; /* Optional: Change color on hover */
   }
   
-  .project-image {
-    width: 100px; /* Set desired width */
-    height: 50px; /* Set desired height */
-    object-fit: cover; /* Ensures images fit the set dimensions without distortion */
-    border-radius: 10px; /* Optional: Adds rounded corners */
+   .project-image {
+    width: 60%; /* Ensures the image spans the full width of its container */
+    max-width: 200px; /* Controls the maximum width */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: cover; /* Ensures the image covers its container without distortion */
   }
 
 }
