@@ -221,24 +221,39 @@ body {
     display: none;
   }
 
-  /*para los links en la pagina project*/
-  a {
-    color: #ffffff; /* Change the link color to white */
-    margin-right: 100px; /* Space between links */
-    text-decoration: none;
-    font-weight: 500; /* Optional: Make the text a bit bolder */
-    transition: 0.3s ease; /* Optional: Smooth hover transition */
-  }
-  
-  a:hover {
-    color: #47b2e4; /* Optional: Change color on hover */
-  }
-  
-   .project-image {
-    width: 60%; /* Ensures the image spans the full width of its container */
-    max-width: 200px; /* Controls the maximum width */
-    height: auto; /* Maintains aspect ratio */
-    object-fit: cover; /* Ensures the image covers its container without distortion */
-  }
+  /*project item - project content/
+  .project-item {
+    margin-bottom: 20px; /* Espacio entre proyectos */
+}
+
+.project-content {
+    display: flex;
+    justify-content: space-between; /* Distribuye el contenido */
+    align-items: center; /* Centra verticalmente */
+}
+
+.project-details {
+    flex: 1; /* Permite que el texto ocupe el espacio disponible */
+    margin-right: 20px; /* Espacio entre el texto y la imagen */
+}
+
+.project-image {
+    width: 60%; /* Controla el tamaño de la imagen */
+    max-width: 200px; /* Controla el ancho máximo */
+    height: auto; /* Mantiene la proporción */
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsión */
+}
+
+.project-details a {
+    display: block; /* Hace que los enlaces se muestren en bloques */
+    margin-bottom: 10px; /* Espacio entre los enlaces */
+    color: #ffffff; /* Color de texto de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.project-details a:hover {
+    color: #47b2e4; /* Cambia el color al pasar el mouse */
+}
+
 
 }
