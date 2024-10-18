@@ -221,10 +221,6 @@ body {
     display: none;
   }
 
-  .about-section {
-    margin-top: 70px; /* Adjust this value as necessary */
-  }
-
   /*para los links en la pagina project*/
   a {
     color: #fff; /* Change the link color to white */
