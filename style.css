@@ -221,28 +221,37 @@ body {
     display: none;
   }
 
-  .about-section {
-    margin-top: 70px; /* Adjust this value as necessary */
-  }
-
-  /*para los links en la pagina project*/
-  a {
-    color: #fff; /* Change the link color to white */
-    margin-right: 100px; /* Space between links */
-    text-decoration: none;
-    font-weight: 500; /* Optional: Make the text a bit bolder */
-    transition: 0.3s ease; /* Optional: Smooth hover transition */
+/*pagina projects */
+  .about {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between projects */
   }
   
-  a:hover {
-    color: #47b2e4; /* Optional: Change color on hover */
+  .project-item {
+    display: flex;
+    align-items: flex-start; /* Align image and text */
+    gap: 20px; /* Space between image and text */
   }
   
-   .project-image {
-    width: 60%; /* Ensures the image spans the full width of its container */
-    max-width: 200px; /* Controls the maximum width */
-    height: auto; /* Maintains aspect ratio */
-    object-fit: cover; /* Ensures the image covers its container without distortion */
+  .project-image {
+    width: 150px; /* Set image width */
+    height: auto; /* Maintain aspect ratio */
   }
+  
+  .project-details {
+    flex-grow: 1; /* Allow details to take available space */
+  }
+  
+  .links {
+    margin-top: 10px; /* Space above links */
+  }
+  
+  .links a {
+    display: block; /* Stack links vertically */
+    margin-bottom: 5px; /* Space between links */
+  }
+  
+ 
 
 }
