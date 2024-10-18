@@ -226,6 +226,12 @@ body {
     margin-bottom: 20px; /* Espacio entre proyectos */
 }
 
+.project-item {
+    display: flex; /* Allows the image and details to be laid out side by side */
+    align-items: center;
+    margin-bottom: 20px; /* Space between projects */
+}
+
 .project-content {
     display: flex;
     justify-content: space-between; /* Distribuye el contenido */
@@ -233,22 +239,21 @@ body {
 }
 
 .project-details {
-    flex: 1; /* Permite que el texto ocupe el espacio disponible */
-    margin-right: 200px; /* Espacio entre el texto y la imagen */
+    flex: 1; /* Makes sure the project details take up the remaining space */
+    margin-left: 100px; /* Increases the space between the image and the text */
 }
 
 .project-image {
-    width: 60%; /* Controla el tamaño de la imagen */
-    max-width: 200px; /* Controla el ancho máximo */
-    height: auto; /* Mantiene la proporción */
-    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsión */
+    width: 200px; /* Controls the size of the image */
+    height: auto; /* Maintains the aspect ratio of the image */
+    object-fit: cover; /* Ensures the image covers the container without distortion */
 }
 
 .project-details a {
-    display: block; /* Hace que los enlaces se muestren en bloques */
-    margin-bottom: 10px; /* Espacio entre los enlaces */
-    color: #d2a316; /* Color de texto de los enlaces */
-    text-decoration: underline; /* Sin subrayado */
+    display: inline-block; /* Keeps the links inline */
+    margin-bottom: 10px; /* Space between the links */
+    color: #d2a316; /* Link text color */
+    text-decoration: underline; /* Underline for links */
 }
 
 .project-details a:hover {
