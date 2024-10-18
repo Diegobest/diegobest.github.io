@@ -221,9 +221,7 @@ body {
     display: none;
   }
 
-  /*project item - project content /
-  .project-item {
-    margin-bottom: 20px; /* Espacio entre proyectos */
+
 }
 
 .project-item {
@@ -240,7 +238,7 @@ body {
 
 .project-details {
     flex: 1; /* Makes sure the project details take up the remaining space */
-    margin-left: 100px; /* Increases the space between the image and the text */
+    margin-left: 80px; /* Increases the space between the image and the text */
 }
 
 .project-image {
@@ -259,5 +257,11 @@ body {
 .project-details a:hover {
     color: #47b2e4; /* Cambia el color al pasar el mouse */
 }
+
+p {
+    margin-bottom: 15px; /* Adds space between paragraphs */
+    line-height: 1.6;    /* Adjusts the line height for readability */
+    color: #c9c7c7;      /* Sets the color to match your design */
+  }
 
 
