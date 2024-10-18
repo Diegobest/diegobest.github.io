@@ -224,11 +224,8 @@ body {
 
 }
 
-.project-item {
-    display: flex; /* Allows the image and details to be laid out side by side */
-    align-items: center;
-    margin-bottom: 20px; /* Space between projects */
-}
+
+
 
 .project-content {
     display: flex;
@@ -258,10 +255,5 @@ body {
     color: #47b2e4; /* Cambia el color al pasar el mouse */
 }
 
-p {
-    margin-bottom: 15px; /* Adds space between paragraphs */
-    line-height: 1.6;    /* Adjusts the line height for readability */
-    color: #c9c7c7;      /* Sets the color to match your design */
-  }
 
 
