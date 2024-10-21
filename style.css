@@ -258,13 +258,4 @@ body {
     object-fit: cover; /* Ensures the image covers the container without distortion */
 }
 
-.project-details a {
-    display: inline-block; /* Keeps the links inline */
-    margin-bottom: 10px; /* Space between the links */
-    color: #d2a316; /* Link text color */
-    text-decoration: underline; /* Underline for links */
-}
 
-.project-details a:hover {
-    color: #47b2e4; /* Cambia el color al pasar el mouse */
-}
