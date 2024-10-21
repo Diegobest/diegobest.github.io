@@ -223,7 +223,8 @@ body {
 
 }
   
-/* About Section Styles */
+/* project Section Styles */
+
 .project-section {
     display: flex;
     justify-content: space-evenly;
