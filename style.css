@@ -23,16 +23,6 @@ body {
   z-index: 1000; /* Ensure it sits above content */
 }
 
-.h3 {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-  }
-
-  .h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-  }
-
 .navbar {
   display: flex;
   align-items: center;
@@ -176,7 +166,9 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  min-height: calc(100vh - 100px); /* Adjust according to header height */
+  /*min-height: calc(100vh - 100px);  Adjust according to header height */
+  height: 100vh; /* Consider keeping this as is or adjust */
+
   padding: 0 15px;
   max-width: 1200px;
   margin-top: 100px; /* Adjust this value as necessary */
@@ -184,7 +176,7 @@ body {
 
 .about-section .img img {
     width: 200px;
-    border: 5px solid white;  /* Adds a white border with 5px thickness */
+    border: 3px solid white;  
     border-radius: 8px;  /* Optional: slightly round the corners */
   }
 
@@ -251,6 +243,11 @@ body {
     padding: 0 15px;
     max-width: 1200px;
     margin-top: 100px; /* Adjust this value as necessary */
+  }
+
+  .project-section h2 {
+    font-size: 2rem; /* Title size */
+    margin-bottom: 20px; /* Spacing below the title */
   }
 
   .project-section .project {
