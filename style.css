@@ -182,11 +182,9 @@ body {
   margin-top: 100px; /* Adjust this value as necessary */
 }
 
-.about-section .image {
-    width: 100px; /* Controls the size of the image */
-    height: auto; /* Maintains the aspect ratio of the image */
-    object-fit: cover; /* Ensures the image covers the container without distortion */
-}
+.about-section .img img {
+    width: 200px;
+  }
 
 .about-section .about {
   max-width: 600px; /* Adjust based on your needs */
@@ -203,9 +201,6 @@ body {
   color: #c9c7c7; /* Text color */
 }
 
-.about-section .img img {
-    width: 200px;
-  }
 
 /* Media Queries */
 @media screen and (max-width: 1023px) {
