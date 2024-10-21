@@ -235,13 +235,22 @@ body {
 
 .project-section {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
     align-items: center;
     min-height: calc(100vh - 100px); /* Adjust according to header height */
     padding: 0 15px;
     max-width: 1200px;
-    margin-top: 100px; /* Adjust this value as necessary */
-  }
+    margin-top: 100px; 
+    }
+
+    project {
+        margin-bottom: 50px; /* Add space between projects */
+      }
+      
+      .img {
+        margin-bottom: 20px; /* Space between the image and project description */
+      }
 
   .project-section h2 {
     font-size: 2rem; /* Title size */
