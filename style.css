@@ -203,6 +203,10 @@ body {
   color: #c9c7c7; /* Text color */
 }
 
+.about-section .img img {
+    width: 200px;
+  }
+
 /* Media Queries */
 @media screen and (max-width: 1023px) {
   .navbar .logo a {
