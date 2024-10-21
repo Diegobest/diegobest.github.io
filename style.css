@@ -225,8 +225,6 @@ body {
 }
 
 
-
-
 .project-content {
     display: flex;
     justify-content: space-between; /* Distribuye el contenido */
@@ -239,7 +237,7 @@ body {
 }
 
 .project-image {
-    width: 200px; /* Controls the size of the image */
+    width: 100px; /* Controls the size of the image */
     height: auto; /* Maintains the aspect ratio of the image */
     object-fit: cover; /* Ensures the image covers the container without distortion */
 }
