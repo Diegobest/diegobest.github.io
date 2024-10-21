@@ -184,6 +184,8 @@ body {
 
 .about-section .img img {
     width: 200px;
+    border: 5px solid white;  /* Adds a white border with 5px thickness */
+    border-radius: 8px;  /* Optional: slightly round the corners */
   }
 
 .about-section .about {
