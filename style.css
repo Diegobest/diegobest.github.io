@@ -125,13 +125,11 @@ body {
     gap: 15px;
   }
   
-  .social-icons a {
-    text-decoration: none;
-  }
   
   .social-icons img {
     width: 24px;
     height: 24px;
+    background-color: #fff; /* Adds white background */
     transition: transform 0.2s ease;
   }
   
@@ -251,7 +249,7 @@ body {
   }
 
   .project-section .project {
-    max-width: 600px; /* Adjust based on your needs */
+    max-width: 50%; /* Adjust based on your needs */
     color: #fff; /* Text color */
   }
 
