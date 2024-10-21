@@ -261,10 +261,7 @@ body {
     margin-bottom: 20px; /* Adds spacing between project items */
   }
 
-.project-details {
-    flex: 1; /* Makes sure the project details take up the remaining space */
-    margin-left: 40px; /* Increases the space between the image and the text */
-}
+
 
 .project-image {
     width: 200px; /* Controls the size of the image */
