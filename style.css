@@ -23,6 +23,11 @@ body {
   z-index: 1000; /* Ensure it sits above content */
 }
 
+.h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+
 .navbar {
   display: flex;
   align-items: center;
@@ -161,6 +166,14 @@ body {
 }
 
 /* About Section Styles */
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
 .about-section {
   display: flex;
   justify-content: space-evenly;
@@ -254,7 +267,7 @@ body {
 }
 
 .project-image {
-    width: 150px; /* Controls the size of the image */
+    width: 200px; /* Controls the size of the image */
     height: auto; /* Maintains the aspect ratio of the image */
     object-fit: cover; /* Ensures the image covers the container without distortion */
 }
