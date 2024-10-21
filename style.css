@@ -223,6 +223,17 @@ body {
 
 }
   
+/* About Section Styles */
+.project-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: calc(100vh - 100px); /* Adjust according to header height */
+    padding: 0 15px;
+    max-width: 1200px;
+    margin-top: 100px; /* Adjust this value as necessary */
+  }
+
 .project-item {
     display: flex;
     justify-content: space-between; /* Spreads items horizontally with space between */
