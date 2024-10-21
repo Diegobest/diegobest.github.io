@@ -1,37 +1,262 @@
-.project-item {
+/* Importing Google font - Open Sans */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  height: auto; /* Change to auto to prevent fixed height issues */
+  width: 100%;
+  background: linear-gradient(to bottom, #175d69 23%, #330c43 95%);
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px; /* Set fixed height for header */
+  z-index: 1000; /* Ensure it sits above content */
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 15px;
+}
+
+.navbar .logo a {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar .links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 35px;
+}
+
+.navbar .links a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 0;
+  transition: 0.2s ease;
+}
+
+.navbar .links a:hover {
+  color: #47b2e4;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh; /* Consider keeping this as is or adjust */
+  padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-section .hero {
+  max-width: 50%;
+  color: #fff;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #c9c7c7;
+}
+
+.hero-section .img img {
+  width: 517px;
+}
+
+.hero-section .buttons {
+  margin-top: 40px;
+}
+
+.hero-section .buttons a {
+  text-decoration: none;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  transition: 0.2s ease;
+  display: inline-block;
+}
+
+.hero-section .buttons a:not(:last-child) {
+  margin-right: 15px;
+}
+
+.buttons .join {
+  background-color: #47b2e4;
+}
+
+.hero-section .buttons .learn {
+  border: 1px solid #fff;
+  border-radius: 0.375rem;
+}
+
+.hero-section .buttons a:hover {
+  background-color: #47b2e4;
+}
+
+/* Social icons next to the logo */
+.social-icons {
     display: flex;
-    justify-content: space-between; /* Distributes the content horizontally */
-    align-items: center; /* Centers the items vertically */
-    width: 100%; /* Takes up full width */
-    margin-bottom: 20px; /* Space between project items */
+    align-items: center;
+    gap: 15px;
   }
   
-  .project-content {
+  .social-icons a {
+    text-decoration: none;
+  }
+  
+  .social-icons img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.2s ease;
+  }
+  
+  .social-icons img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Adjust the logo to align with the icons */
+  .logo {
     display: flex;
-    justify-content: space-between;
-    align-items: center; /* Centers the image and text vertically */
-    width: 100%; /* Ensure the content takes full width */
+    align-items: center;
+    gap: 20px;
   }
   
-  .project-details {
-    flex: 1; /* Takes remaining space after the image */
-    margin-left: 40px; /* Creates space between the image and text */
-  }
   
-  .project-image {
-    width: 150px; /* Adjust size for better visibility */
-    height: auto; /* Maintains aspect ratio */
-    object-fit: cover; /* Makes sure the image fits properly */
+/* Hamburger menu styles */
+#menu-toggle {
+  display: none;
+}
+
+#hamburger-btn {
+  font-size: 1.8rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  order: 1;
+}
+
+/* About Section Styles */
+.about-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: calc(100vh - 100px); /* Adjust according to header height */
+  padding: 0 15px;
+  max-width: 1200px;
+  margin-top: 100px; /* Adjust this value as necessary */
+}
+
+.about-section .about {
+  max-width: 600px; /* Adjust based on your needs */
+  color: #fff; /* Text color */
+}
+
+.about-section h2 {
+  font-size: 2rem; /* Title size */
+  margin-bottom: 20px; /* Spacing below the title */
+}
+
+.about-section p {
+  font-size: 1.2rem; /* Text size */
+  color: #c9c7c7; /* Text color */
+}
+
+/* Media Queries */
+@media screen and (max-width: 1023px) {
+  .navbar .logo a {
+    font-size: 1.5rem;
   }
-  
-  .project-details a {
-    display: inline-block;
-    margin-bottom: 10px; /* Space between links */
-    color: #d2a316; /* Link color */
-    text-decoration: underline;
+
+  .links {
+    position: fixed;
+    left: -100%;
+    top: 75px;
+    width: 100%;
+    height: 100vh;
+    padding-top: 50px;
+    background: #e2e8e9;
+    flex-direction: column;
+    transition: 0.3s ease;
   }
-  
-  .project-details a:hover {
-    color: #47b2e4; /* Color on hover */
+
+  .navbar #menu-toggle:checked ~ .links {
+    left: 0;
   }
-  
+
+  .navbar #hamburger-btn {
+    display: block;
+  }
+
+  .hero-section .hero {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero-section img {
+    display: none;
+  }
+
+
+  .project-item {
+    display: flex;
+    justify-content: space-between; /* Spreads items horizontally with space between */
+    align-items: center; /* Centers items vertically */
+    width: 100%; /* Ensures the container takes full width */
+    margin-bottom: 20px; /* Adds spacing between project items */
+  }
+
+.project-content {
+    display: flex;
+    justify-content: space-between; /* Distribuye el contenido */
+    align-items: center; /* Centra verticalmente */
+}
+
+.project-details {
+    flex: 1; /* Makes sure the project details take up the remaining space */
+    margin-left: 40px; /* Increases the space between the image and the text */
+}
+
+.project-image {
+    width: 20px; /* Controls the size of the image */
+    height: auto; /* Maintains the aspect ratio of the image */
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+}
+
+.project-details a {
+    display: inline-block; /* Keeps the links inline */
+    margin-bottom: 10px; /* Space between the links */
+    color: #d2a316; /* Link text color */
+    text-decoration: underline; /* Underline for links */
+}
+
+.project-details a:hover {
+    color: #47b2e4; /* Cambia el color al pasar el mouse */
+}
+
+
+
