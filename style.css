@@ -233,11 +233,11 @@ body {
 
 .project-details {
     flex: 1; /* Makes sure the project details take up the remaining space */
-    margin-left: 80px; /* Increases the space between the image and the text */
+    margin-left: 40px; /* Increases the space between the image and the text */
 }
 
 .project-image {
-    width: 100px; /* Controls the size of the image */
+    width: 120px; /* Controls the size of the image */
     height: auto; /* Maintains the aspect ratio of the image */
     object-fit: cover; /* Ensures the image covers the container without distortion */
 }
