@@ -229,7 +229,7 @@ body {
     width: 100%; /* Ensures the container takes full width */
     margin-bottom: 20px; /* Adds spacing between project items */
   }
-  
+
 .project-content {
     display: flex;
     justify-content: space-between; /* Distribuye el contenido */
@@ -242,7 +242,7 @@ body {
 }
 
 .project-image {
-    width: 150px; /* Controls the size of the image */
+    width: 80px; /* Controls the size of the image */
     height: auto; /* Maintains the aspect ratio of the image */
     object-fit: cover; /* Ensures the image covers the container without distortion */
 }
