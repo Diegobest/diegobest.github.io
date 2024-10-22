@@ -246,9 +246,6 @@ body {
         margin-bottom: 50px; /* Add space between projects */
       }
       
-      .img {
-        margin-bottom: 20px; /* Space between the image and project description */
-      }
 
   .project-section h2 {
     font-size: 2rem; /* Title size */
@@ -274,9 +271,6 @@ body {
 }
 
 
-.project-section .buttons {
-    margin-top: 40px;
-  }
   
   .project-section .buttons a {
     text-decoration: none;
