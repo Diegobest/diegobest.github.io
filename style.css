@@ -10,7 +10,6 @@ body {
     height: auto; /* Change to auto to prevent fixed height issues */
     width: 100%;
     background: linear-gradient(to bottom, #175d69 23%, #330c43 95%);
-    overflow: hidden; 
 }
 
 .header {
