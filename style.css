@@ -241,11 +241,11 @@ body {
     min-height: calc(100vh - 100px); /* Adjust according to header height */
     padding: 0 15px;
     max-width: 1200px;
-    margin-top: 100px; 
+    margin-top: auto; 
     }
 
     project {
-        margin-bottom: 50px; /* Add space between projects */
+        margin-bottom: 100px; /* Add space between projects */
       }
       
       .img {
@@ -263,13 +263,6 @@ body {
     color: #fff; /* Text color */
   }
 
-.project-item {
-    display: flex;
-    justify-content: space-between; /* Spreads items horizontally with space between */
-    align-items: center; /* Centers items vertically */
-    width: 100%; /* Ensures the container takes full width */
-    margin-bottom: 20px; /* Adds spacing between project items */
-  }
 
 
 
