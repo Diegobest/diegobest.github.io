@@ -164,7 +164,7 @@ body {
   align-items: center;
   /*min-height: calc(100vh - 100px);  Adjust according to header height */
   height: 100vh; /* Consider keeping this as is or adjust */
-
+  overflow: hidden; /* Prevent scrolling */
   padding: 0 15px;
   max-width: 1200px;
 }
