@@ -240,8 +240,6 @@ body {
     padding: 0 15px;
     max-width: 1200px;
     margin-top: 100px;  
-    height: 100vh; /* Ensure the section takes the full viewport height */
-    overflow-y: scroll; /* Enable vertical scrolling */
     }
 
     project {
@@ -262,7 +260,7 @@ body {
 
 
   .project-container .project {
-    max-width: 600px; /* Adjust based on your needs */
+    max-width: 800px; /* Adjust based on your needs */
     color: #fff; /* Text color */
   }
 
