@@ -255,6 +255,7 @@ body {
   .project-section h2 {
     font-size: 2rem; /* Title size */
     margin-bottom: 20px; /* Spacing below the title */
+    color: #fff;
   }
 
   .project-section .project {
