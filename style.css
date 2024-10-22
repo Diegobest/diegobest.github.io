@@ -7,8 +7,7 @@
 }
 
 body {
-
-    height: calc(100vh - 100px); /* Subtract the header height */
+    height: 100vh; /* Consider keeping this as is or adjust */
     width: 100%;
     background: linear-gradient(to bottom, #175d69 23%, #330c43 95%);
 }
