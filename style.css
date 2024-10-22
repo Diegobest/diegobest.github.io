@@ -8,7 +8,7 @@
 
 body {
     height: 100vh;
-    overflow: hidden;
+
   background: linear-gradient(to bottom, #175d69 23%, #330c43 95%);
 }
 
@@ -167,7 +167,6 @@ body {
 
   padding: 0 15px;
   max-width: 1200px;
-  margin-top: 100px; /* Adjust this value as necessary */
 }
 
 .about-section .img img {
@@ -236,7 +235,6 @@ body {
     flex-direction: column; /* Stack items vertically */
     justify-content: center;
     align-items: center;
-    overflow-y: auto; 
     min-height: calc(100vh - 100px); /* Adjust according to header height */
     padding: 0 15px;
     max-width: 1200px;
