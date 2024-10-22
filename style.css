@@ -253,6 +253,12 @@ body {
     color: #fff;
   }
 
+  .project-section h3 {
+    font-size: 1rem; /* Title size */
+    margin-bottom: 10px; /* Spacing below the title */
+    color: #fff;
+  }
+
   .project-section .project {
     max-width: 50%; /* Adjust based on your needs */
     color: #fff; /* Text color */
