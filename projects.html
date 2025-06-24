@@ -2,84 +2,99 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projects - Diego Bayancela</title>
-    <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects - Diego Bayancela</title>
+  <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <header class="header">
-        <nav class="navbar">
-            <h2 class="logo"><a href="index.html">Diego Bayancela</a></h2>
-               <!-- Social media icons -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">
+        <h2><a href="index.html">Diego Bayancela</a></h2>
+        <!-- Social media icons -->
         <div class="social-icons">
-            <a href="https://www.linkedin.com/in/diegobayancela/" target="_blank">
-              <img src="icons/LinkedIn.png" alt="LinkedIn" class="icon" />
-            </a>
-            <a href="https://github.com/Diegobest" target="_blank">
-              <img src="icons/github.svg" alt="GitHub" class="icon" />
-            </a>
-            <a href="https://www.behance.net/dbayancela" target="_blank">
-                <img src="icons/behance.svg" alt="GitHub" class="icon" />
-              </a>
-                <a href="https://diegobayancela.wixsite.com/portfolio" target="_blank">
-              <img src="icons/logo_wix.png" alt="Wix Portfolio" class="icon" />
-            </a>
-          </div>
-            <input type="checkbox" id="menu-toggle" />
-            <label for="menu-toggle" id="hamburger-btn">
-                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
-                    <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-                </svg>
-            </label>
-            <ul class="links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-            </ul>
-        </nav>
-    </header>
- 
-    <section class="project-section">
-        <h2>Projects</h2>
-        <div class="project-container">
-            <div class="img">
-                <img src="icons/NomieImage.png" alt="Project 1" class="project-image" />
-            </div>
-            <div class="project"> 
-                <h3>Nomie Web Application</h3>
-                <p>
-                    A full-stack web application developed using Next.js and MongoDB
-                    It includes features for user authentication, dynamic data
-                    rendering, and robust API integrations.
-                </p>
-                <div class="buttons">
-                    <a href="https://github.com/Diegobest/NOMIE-main" class="learn" target="_blank">GitHub</a>
-                    <a href="https://nomie-app.vercel.app/" class="learn" target="_blank">Link Vercel</a>
-                </div>
-            </div>
-        <br>
-        <br>
-            <div class="project-container"></div>
-            <div class="img">
-            <img src="icons/projetgoimage.png" alt="Project 2" class="project-image" />
+          <a href="https://www.linkedin.com/in/diegobayancela/" target="_blank">
+            <img src="icons/LinkedIn.png" alt="LinkedIn" class="icon" />
+          </a>
+          <a href="https://github.com/Diegobest" target="_blank">
+            <img src="icons/github.svg" alt="GitHub" class="icon" />
+          </a>
+          <a href="https://www.behance.net/dbayancela" target="_blank">
+            <img src="icons/behance.svg" alt="Behance" class="icon" />
+          </a>
+          <a href="https://diegobayancela.wixsite.com/portfolio" target="_blank">
+            <img src="icons/logo_wix.png" alt="Wix Portfolio" class="icon" />
+          </a>
         </div>
-            <div class="project">
-                <h3>ProjectGO Application</h3>
-                <p>
-                    Non-profit organization that helps communities set up collective projects in Quebec.
-                    Web application that showcases the ProjetGo organization and its achievements, also enables the
-                    creation of user accounts and projects.
-                </p>
-                <div class="buttons">
-                    <a href="https://github.com/RhinoSideShow/ProjetIntegration" class="learn" target="_blank">GitHub</a>
-                    <a href="icons/Presentation_ProjetGo.pptx" class="learn" target="_blank" download="Presentation_ProjetGo.pptx">PowerPoint</a>
-                </div>
-            </div>
+      </div>
+
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" id="hamburger-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+          <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </label>
+      <ul class="links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="project-section">
+    <h2>Projects</h2>
+
+    <!-- Project 1 -->
+    <div class="project-container">
+      <div class="img">
+        <img src="icons/NomieImage.png" alt="Nomie Web App" class="project-image" />
+      </div>
+      <div class="project">
+        <h3>Nomie Web Application</h3>
+        <p>
+          A full-stack web application developed using Next.js and MongoDB.
+          It includes features for user authentication, dynamic data rendering,
+          and robust API integrations.
+        </p>
+        <div class="buttons">
+          <a href="https://github.com/Diegobest/NOMIE-main" class="learn" target="_blank">GitHub</a>
+          <a href="https://nomie-app.vercel.app/" class="learn" target="_blank">Live Demo</a>
         </div>
-    </section>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-container">
+      <div class="img">
+        <img src="icons/projetgoimage.png" alt="ProjectGO App" class="project-image" />
+      </div>
+      <div class="project">
+        <h3>ProjectGO Application</h3>
+        <p>
+          A nonprofit organization helping communities launch collective projects in Quebec.
+          This web app showcases the organization’s mission, allows user registration, and
+          enables project creation.
+        </p>
+        <div class="buttons">
+          <a href="https://github.com/RhinoSideShow/ProjetIntegration" class="learn" target="_blank">GitHub</a>
+          <a href="icons/Presentation_ProjetGo.pptx" class="learn" target="_blank" download>Download PPT</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Optional JavaScript to enable scroll effect on header -->
+  <script>
+    window.addEventListener("scroll", () => {
+      const header = document.querySelector(".header");
+      header.classList.toggle("scrolled", window.scrollY > 50);
+    });
+  </script>
 </body>
 
 </html>
