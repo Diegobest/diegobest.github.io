@@ -275,6 +275,49 @@ body {
   background-color: #47b2e4;
 }
 
+/* Improved spacing for Projects Section */
+.project-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px; /* More space between image and text */
+  margin-bottom: 60px; /* More space between projects */
+  padding: 20px 0;
+}
+
+.project {
+  max-width: 800px;
+  color: #fff;
+  padding-left: 20px; /* Adds space inside text container */
+}
+
+.project h3 {
+  margin-bottom: 16px;
+  font-size: 1.5rem;
+}
+
+.project p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin-bottom: 30px; /* Adds space below paragraph before buttons */
+}
+
+.project-section .buttons {
+  display: flex;
+  gap: 20px; /* Space between buttons */
+}
+
+.project-section .buttons a {
+  padding: 14px 32px; /* Larger clickable area */
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.project-section .buttons a:hover {
+  background-color: #47b2e4;
+  color: #fff;
+}
+
 /* Media Queries */
 @media screen and (max-width: 1023px) {
   .navbar .logo a {
