@@ -8,9 +8,15 @@
     <link rel="icon" type="image/x-icon" href="icons/favicon.ico" />
     <link rel="stylesheet" href="style.css" />
     <style>
-      /* Smooth scroll behavior */
       html {
         scroll-behavior: smooth;
+      }
+
+      /* Header background when scrolled 60% */
+      .header.scrolled {
+        background-color: rgba(240, 240, 240, 0.95);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
       }
 
       /* Scroll animation */
@@ -25,29 +31,11 @@
         transform: translateY(0);
       }
 
-      /* Optional hover/focus styling */
       a:hover, a:focus {
         opacity: 0.8;
         transition: 0.3s ease;
       }
     </style>
-    <script>
-      // Simple scroll-based fade-in effect
-      document.addEventListener("DOMContentLoaded", () => {
-        const fadeEls = document.querySelectorAll(".fade-in");
-        const observer = new IntersectionObserver(
-          entries => {
-            entries.forEach(entry => {
-              if (entry.isIntersecting) {
-                entry.target.classList.add("show");
-              }
-            });
-          },
-          { threshold: 0.1 }
-        );
-        fadeEls.forEach(el => observer.observe(el));
-      });
-    </script>
   </head>
 
   <body>
@@ -107,5 +95,34 @@
         </div>
       </section>
     </main>
+
+    <script>
+      // Add background to header after 60% scroll
+      window.addEventListener("scroll", () => {
+        const scrollPercent = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+        const header = document.querySelector(".header");
+        if (scrollPercent > 60) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+
+      // Fade-in effect on scroll
+      document.addEventListener("DOMContentLoaded", () => {
+        const fadeEls = document.querySelectorAll(".fade-in");
+        const observer = new IntersectionObserver(
+          entries => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+              }
+            });
+          },
+          { threshold: 0.1 }
+        );
+        fadeEls.forEach(el => observer.observe(el));
+      });
+    </script>
   </body>
 </html>
