@@ -22,13 +22,13 @@ body {
   left: 0;
   width: 100%;
   height: 100px;
-  background-color: rgba(58, 51, 51, 0.95); /* <- Add this line */
+  background-color: rgba(58, 53, 53, 0.187); /* <- Add this line */
   z-index: 1000;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .header.scrolled {
-  background-color: rgba(240, 240, 240, 0.95);
+  background-color: rgba(192, 188, 188, 0.137);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
